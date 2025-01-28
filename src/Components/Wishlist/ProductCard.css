@@ -1,0 +1,85 @@
+.product-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 8px;
+    color: white;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  
+  .badge.discount {
+    background: red;
+  }
+  
+  .badge.label {
+    background: green;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .product-info {
+    padding: 10px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .product-price {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-left: 5px;
+  }
+  
+  .product-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f9f9f9;
+  }
+  
+  .add-to-cart-btn, .delete-btn, .view-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+  }
+  
+  .add-to-cart-btn:hover, .delete-btn:hover, .view-btn:hover {
+    background: #444;
+    transform: scale(1.05);
+  }
+  

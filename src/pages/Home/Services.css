@@ -1,0 +1,47 @@
+.ser-cont{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 90px;
+}
+.serv-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.serv-head{
+    margin-top: 20px;
+    font-family: "outfit";
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .ser-cont {
+      flex-direction: column;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+  
+    .serv-item {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .serv-head {
+      font-size: 18px;
+    }
+  
+    .serv-item p {
+      font-size: 14px;
+    }
+  
+    .ser-cont svg {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  

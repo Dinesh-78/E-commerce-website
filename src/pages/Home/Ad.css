@@ -1,0 +1,58 @@
+.a-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+  }
+  
+  .a-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 85%;
+    height: 60vh;
+    background-color: black;
+  }
+  
+  .time-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .time-part {
+    text-align: center;
+    color: white;
+  }
+  
+  .time-circle {
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .ad-b {
+    background: #00FF66;
+    color: white;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: "outfit";
+    cursor: pointer;
+  }
+  
+ .ad-b:hover {
+    background-color: #00e54f;
+  }
+  

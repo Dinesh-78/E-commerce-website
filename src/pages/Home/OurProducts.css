@@ -1,0 +1,149 @@
+/* OurProducts.css */
+.cato-container {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .heading .box {
+    width: 30px;
+    height: 45px;
+    background-color: #DB4444;
+    display: inline-block;
+  }
+  
+  .sub-head {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .arrows {
+    display: flex;
+  }
+
+
+  
+  .pro-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .pro-item {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding:60px 50px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    
+  }
+  
+  .pro-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .p-img-cont {
+    position: relative;
+    margin-bottom: 10px;
+   
+  }
+  
+  .p-i-icon {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 96px;
+    bottom: 20px;
+  }
+  
+  .p-i-cont p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .p-i-cont span {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .rating .p-star {
+    cursor: pointer;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  /* Responsive Layouts */
+  @media (max-width: 1200px) {
+    .pro-item {
+      width: 220px;  /* Slightly bigger for large screens but not too wide */
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .sub-head h2 {
+      font-size: 24px;
+    }
+  
+    .pro-item {
+      width: 45%; /* Two items per row */
+    }
+  
+    .arrows {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .sub-head h2 {
+      font-size: 20px;
+    }
+  
+    .pro-item {
+      width: 100%; /* One item per row */
+    }
+  
+    .arrows {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .sub-head h2 {
+      font-size: 18px;
+    }
+  
+    .cato-container {
+      padding: 10px;
+    }
+  
+    .pro-item {
+      width: 100%; /* Full width on mobile */
+    }
+  
+    .p-i-cont p {
+      font-size: 14px; /* Smaller text on mobile */
+    }
+  
+    .p-i-cont span {
+      font-size: 12px;
+    }
+  
+    .rating .p-star {
+      font-size: 18px; /* Smaller stars on mobile */
+    }
+  }
+  

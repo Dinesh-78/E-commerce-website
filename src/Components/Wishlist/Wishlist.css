@@ -1,0 +1,38 @@
+.app-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+  }
+  
+  .wishlist-section, .just-for-you-section {
+    margin-bottom: 40px;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 8px 12px;
+    border: 1px solid black;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: black;
+    color: white;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .move-all-btn, .see-all-btn {
+    float: right;
+    margin-bottom: 10px;
+  }
+  

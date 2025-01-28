@@ -1,0 +1,160 @@
+/* General styles */
+.cato-container {
+    margin: 40px;
+    padding: 40px;
+  }
+  
+  .heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heading .box {
+    height: 40px;
+    width: 20px;
+    background-color: #DB4444;
+    margin-right: 20px;
+  }
+  
+  .category-heading {
+    font-family: "Outfit";
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #DB4444;
+  }
+  
+  .sub-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .browse-heading {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-family: "Outfit";
+    font-weight: 500;
+  }
+  
+  .arrows {
+    display: flex;
+    align-items: center;
+  }
+  
+  .arrow {
+    display: inline-block;
+    background: #F5F5F5;
+    border-radius: 50%;
+    padding: 10px;
+    margin: 0 10px;
+  }
+  
+  .arrow.left {
+    /* Customize the left arrow style */
+  }
+  
+  .arrow.right {
+    /* Customize the right arrow style */
+  }
+  
+  .item-cont {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 60px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .items:hover {
+    background: #DB4444;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .name {
+    margin-top: 20px;
+    font-family: "Outfit";
+    font-size: 1.25rem;
+  }
+  
+  .ima {
+    font-size: 3rem;
+  }
+  
+  /* Media Queries for responsiveness */
+  @media (max-width: 768px) {
+    .cato-container {
+      margin: 20px;
+      padding: 20px;
+    }
+  
+    .heading .box {
+      height: 30px;
+      width: 15px;
+    }
+  
+    .category-heading {
+      font-size: 18px;
+    }
+  
+    .sub-head {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .browse-heading {
+      font-size: 1.5rem;
+    }
+  
+    .arrows {
+      display: none; /* Hide arrows for mobile */
+    }
+  
+    .item-cont {
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .items {
+      width: 90%;
+      padding: 20px 30px;
+      margin: 10px 0;
+    }
+  
+    .ima {
+      font-size: 2.5rem;
+    }
+  
+    .name {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .browse-heading {
+      font-size: 1.25rem;
+    }
+  
+    .name {
+      font-size: 1rem;
+    }
+  
+    .ima {
+      font-size: 2rem;
+    }
+  }
+  
